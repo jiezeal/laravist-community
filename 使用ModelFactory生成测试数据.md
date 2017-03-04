@@ -86,6 +86,8 @@ php artisan tinker
 namespace App;
 factory(Discussion::class, 30)->create();
 
+查看数据表，已有测试数据
+
 
 
 
