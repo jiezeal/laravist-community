@@ -1,6 +1,5 @@
-#使用Laravel开发社区
+#使用ModelFactory生成测试数据
 
-###使用ModelFactory生成测试数据
 php artisan make:migration create_discussions_table --create=discussions
 php artisan make:model Discussion
 
