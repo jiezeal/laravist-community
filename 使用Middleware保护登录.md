@@ -62,5 +62,3 @@ protected function unauthenticated($request, AuthenticationException $exception)
     return redirect()->guest('user/login');
 }
 ```
-
-
