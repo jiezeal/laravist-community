@@ -51,3 +51,15 @@ views/forum/index.blade.php
 <h2>欢迎来到Laravel App社区<a class="btn btn-primary btn-lg pull-right" href="{{ url('discussions/create') }}" role="button">发布新的帖子</a></h2>
 ```
 
+app/Exceptions/Handler.php
+```
+protected function unauthenticated($request, AuthenticationException $exception)
+{
+    if ($request->expectsJson()) {
+        return response()->json(['error' => 'Unauthenticated.'], 401);
+    }
+
+    return redirect()->guest('user/login');
+}
+```
+
