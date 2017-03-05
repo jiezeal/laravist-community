@@ -1,6 +1,7 @@
 #使用Middleware保护登录
 
 优化界面和流程
+
 views/app.blade.php
 ```
 <!doctype html>
