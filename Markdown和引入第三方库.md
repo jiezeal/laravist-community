@@ -73,3 +73,12 @@ public function show($id){
 }
 ```
 
+views/forum/show.blade.php
+```
+<div class="col-md-9" role="main">
+    <div class="blog-post">
+        {!! $html !!}
+    </div>
+</div>
+```
+
