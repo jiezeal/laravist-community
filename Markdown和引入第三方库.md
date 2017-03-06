@@ -81,4 +81,3 @@ views/forum/show.blade.php
     </div>
 </div>
 ```
-
