@@ -45,5 +45,7 @@ class Markdown
 }
 ```
 
+composer dump-autoload
+
 
 
