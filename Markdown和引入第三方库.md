@@ -47,5 +47,29 @@ class Markdown
 
 composer dump-autoload
 
+PostsController.php
+```
+use App\Markdown\Markdown;
 
+protected $markdown;
+
+/**
+ * PostsController constructor.
+ */
+public function __construct(Markdown $markdown)
+{
+    $this->middleware('auth', ['only' => ['create', 'store', 'edit', 'update']]);
+    $this->markdown = $markdown;
+}
+
+/**
+ * @param $id
+ * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+ */
+public function show($id){
+    $discussion = Discussion::findOrFail($id);
+    $html = $this->markdown->markdown($discussion->body);
+    return view('forum.show', compact('discussion', 'html'));
+}
+```
 
