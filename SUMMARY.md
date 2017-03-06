@@ -8,3 +8,4 @@
 * [发表一篇新的帖子](发表一篇新的帖子.md)
 * [使用Middleware保护登录](使用Middleware保护登录.md)
 * [Markdown和引入第三方库](Markdown和引入第三方库.md)
+* [更新帖子内容](更新帖子内容.md)
