@@ -9,3 +9,4 @@
 * [使用Middleware保护登录](使用Middleware保护登录.md)
 * [Markdown和引入第三方库](Markdown和引入第三方库.md)
 * [更新帖子内容](更新帖子内容.md)
+* [社区评论](社区评论.md)
