@@ -114,6 +114,3 @@ public function changeAvatar(Request $request){
     // return redirect('/user/avatar');
 }
 ```
-
-
-
