@@ -77,3 +77,5 @@ views/users/avatar.blade.php
 [https://github.com/JellyBool/laravel-app/blob/master/avatar.blade.php](https://github.com/JellyBool/laravel-app/blob/master/avatar.blade.php)  
 [https://github.com/JellyBool/laravel-app/blob/master/ajax.form.js](https://github.com/JellyBool/laravel-app/blob/master/ajax.form.js)  
 
+
+
