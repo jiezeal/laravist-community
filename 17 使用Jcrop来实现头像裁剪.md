@@ -7,7 +7,7 @@ Jcrop头像裁剪插件：[https://github.com/tapmodo/Jcrop](https://github.com/
 
 ![](image/screenshot_1488997080573.png)
 改进后：
-
+[https://github.com/JellyBool/laravel-app/blob/master/crop.blade.php](https://github.com/JellyBool/laravel-app/blob/master/crop.blade.php)  
 
 
 
