@@ -77,5 +77,41 @@ views/users/avatar.blade.php
 [https://github.com/JellyBool/laravel-app/blob/master/avatar.blade.php](https://github.com/JellyBool/laravel-app/blob/master/avatar.blade.php)  
 [https://github.com/JellyBool/laravel-app/blob/master/ajax.form.js](https://github.com/JellyBool/laravel-app/blob/master/ajax.form.js)  
 
+UsersController.php
+```
+/**
+ * 上传头像操作
+ * @param Request $request
+ * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+ */
+public function changeAvatar(Request $request){
+    $file =$request->file('avatar');
+    // 验证头像
+    $input = array('image' => $file);
+    $rules = array(
+        'image' => 'image'
+    );
+    $validator = \Validator::make($input, $rules);
+    if ( $validator->fails() ) {
+        return \Response::json([
+            'success' => false,
+            'errors' => $validator->getMessageBag()->toArray()
+        ]);
 
+    }
+    $dstPath = 'uploads/';
+    $filename = \Auth::user()->id.'_'.time().$file->getClientOriginalName();
+    $file->move($dstPath, $filename);
+    // 头像裁剪
+    Image::make($dstPath.$filename)->fit(200)->save();
+    $user = User::find(\Auth::user()->id);
+    $user->avatar = '/'.$dstPath.$filename;
+    $user->save();
+    return \Response::json([
+        'success' => true,
+        'avatar' => asset($dstPath.$filename)
+    ]);
+    // return redirect('/user/avatar');
+}
+```
 
