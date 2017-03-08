@@ -130,6 +130,7 @@ views/users/avatar.blade.php
     </script>
 @stop
 ```
+代码片断：[https://github.com/JellyBool/laravel-app/blob/master/crop.js](https://github.com/JellyBool/laravel-app/blob/master/crop.js)  
 
 web.php
 ```
