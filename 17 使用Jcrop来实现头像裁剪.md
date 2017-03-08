@@ -9,8 +9,6 @@ Jcrop头像裁剪插件：[https://github.com/tapmodo/Jcrop](https://github.com/
 改进后的模态框：
 [https://github.com/JellyBool/laravel-app/blob/master/crop.blade.php](https://github.com/JellyBool/laravel-app/blob/master/crop.blade.php)  
 
-
-
 web.php
 ```
 route::post('/crop/api', 'UsersController@cropAvatar');
