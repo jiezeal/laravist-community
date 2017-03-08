@@ -136,3 +136,27 @@ web.php
 ```
 route::post('/crop/api', 'UsersController@cropAvatar');
 ```
+
+UsersController.php
+```
+/**
+ * Jcrop裁剪
+ * @param Request $request
+ * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+ */
+public function cropAvatar(Request $request){
+    $photo = mb_substr($request->get('photo'), 1);
+    $width = (int) $request->get('w');
+    $height = (int) $request->get('h');
+    $xAlign = (int) $request->get('x');
+    $yAlign = (int) $request->get('y');
+
+    Image::make($photo)->crop($width, $height, $xAlign, $yAlign)->save();
+
+    $user = \Auth::user();
+    $user->avatar = $request->get('photo');
+    $user->save();
+
+    return redirect('/user/avatar');
+}
+```
