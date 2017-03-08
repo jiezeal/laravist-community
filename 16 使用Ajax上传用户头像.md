@@ -4,7 +4,7 @@ views/app.blade.php
 ```
 <script src="/js/jquery.form.js"></script>
 ```
-
+jquery.form.js：[https://github.com/JellyBool/laravel-app/blob/master/jquery.form.js](https://github.com/JellyBool/laravel-app/blob/master/jquery.form.js)  
 
 views/users/avatar.blade.php
 ```
