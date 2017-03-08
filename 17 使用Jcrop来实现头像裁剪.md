@@ -2,3 +2,7 @@
 
 ![](image/screenshot_1488991946724.png)
 
+web.php
+```
+route::post('/crop/api', 'UsersController@cropAvatar');
+```
