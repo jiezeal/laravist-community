@@ -6,7 +6,7 @@ Jcrop头像裁剪插件：[https://github.com/tapmodo/Jcrop](https://github.com/
 [https://github.com/JellyBool/laravel-app/blob/master/jquery.Jcrop.min.js](https://github.com/JellyBool/laravel-app/blob/master/jquery.Jcrop.min.js)  
 
 ![](image/screenshot_1488997080573.png)
-改进后：
+改进后的模态框：
 [https://github.com/JellyBool/laravel-app/blob/master/crop.blade.php](https://github.com/JellyBool/laravel-app/blob/master/crop.blade.php)  
 
 
