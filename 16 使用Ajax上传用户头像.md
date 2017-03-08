@@ -5,6 +5,7 @@ views/app.blade.php
 <script src="/js/jquery.form.js"></script>
 ```
 
+
 views/users/avatar.blade.php
 ```
 @extends('app')
