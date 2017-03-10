@@ -18,3 +18,4 @@ YuanChao\Editor\EndaEditorServiceProvider::class,
 ```
 'EndaEditor' => YuanChao\Editor\Facade\EndaEditorFacade::class,
 ```
+
