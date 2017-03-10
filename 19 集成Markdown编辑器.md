@@ -66,5 +66,11 @@ return [
 ];
 ```
 
+PostsController.php
+```
+use YuanChao\Editor\EndaEditor;
+
+
+```
 
 
