@@ -56,3 +56,15 @@ views/forum/form.blade.php
 </div>
 ```
 
+config/editor.php
+```
+return [
+    // 宽度
+    'width'=>'890px',
+    'uploadUrl'=>'post/upload',
+    ...
+];
+```
+
+
+
