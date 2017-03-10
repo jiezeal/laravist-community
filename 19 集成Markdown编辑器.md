@@ -68,9 +68,21 @@ return [
 
 PostsController.php
 ```
-use YuanChao\Editor\EndaEditor;
+use EndaEditor;
 
+/**
+ * @return string
+ */
+public function upload(){
+    $data = EndaEditor::uploadImgFile('uploads');
+    return json_encode($data);
+}
+```
 
+views/vendor/editor/head.blade.php
+```
+{{--<link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet">--}}
+{{--<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.js"></script>--}}
 ```
 
 
