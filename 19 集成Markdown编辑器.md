@@ -85,7 +85,7 @@ views/vendor/editor/head.blade.php
 {{--<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.js"></script>--}}
 ```
 
-web.ph
+web.php
 ```
 Route::resource('/post/upload', 'PostsController@upload');
 ```
