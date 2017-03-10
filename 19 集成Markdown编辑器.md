@@ -20,3 +20,4 @@ YuanChao\Editor\EndaEditorServiceProvider::class,
 ```
 
 php artisan vendor:publish --tag=EndaEditor
+
