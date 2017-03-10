@@ -89,8 +89,3 @@ web.php
 ```
 Route::resource('/post/upload', 'PostsController@upload');
 ```
-
-
-
-
-
