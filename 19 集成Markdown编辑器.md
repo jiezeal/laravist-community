@@ -19,3 +19,4 @@ YuanChao\Editor\EndaEditorServiceProvider::class,
 'EndaEditor' => YuanChao\Editor\Facade\EndaEditorFacade::class,
 ```
 
+php artisan vendor:publish --tag=EndaEditor
