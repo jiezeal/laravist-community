@@ -9,3 +9,12 @@ yccphp/laravel-5-markdown-editor：[https://github.com/yccphp/laravel-5-markdown
 
 composer update
 
+在config/app.php 的 providers 数组加入一条
+```
+YuanChao\Editor\EndaEditorServiceProvider::class,
+```
+
+在config/app.php 的 aliases 数组加入一条
+```
+'EndaEditor' => YuanChao\Editor\Facade\EndaEditorFacade::class,
+```
