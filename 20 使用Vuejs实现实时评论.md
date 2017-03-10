@@ -124,4 +124,4 @@ views/forum/show.blade.php
 @stop
 ```
 
-实时评论未实验成功
+实时评论未实验成功，需要刷新
