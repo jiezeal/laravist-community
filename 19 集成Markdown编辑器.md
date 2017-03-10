@@ -8,3 +8,4 @@ yccphp/laravel-5-markdown-editor：[https://github.com/yccphp/laravel-5-markdown
 ```
 
 composer update
+
