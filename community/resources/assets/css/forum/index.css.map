@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA;EACE,YAAY;CACb","file":"index.css","sourcesContent":[".forum-index .avatar{\r\n  width: 64px;\r\n}"]}
